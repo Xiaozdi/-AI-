@@ -74,17 +74,32 @@
 ## 部署说明
 
 1. 环境要求
+
    - 微信开发者工具
    - 微信小程序云开发环境
 
 2. 配置步骤
 
-```javascript
-// 修改 app.js 中的环境ID
-wx.cloud.init({
-  env: 'your-env-id',
-  traceUser: true,
-});
+   ```javascript
+   // 修改 app.js 中的环境ID
+   wx.cloud.init({
+     env: 'your-env-id',
+     traceUser: true,
+   });
+   ```
+
+3. 安装依赖
+
+   ```bash
+   # 在 cloudfunctions/processDocument 目录下
+   npm install mammoth pdf-parse iconv-lite axios
+   ```
+
+4. 必要的云开发配置
+
+   - 创建必要的数据库集合
+   - 配置安全规则
+   - 上传云函数
 
 ## 贡献指南
 
