@@ -14,4 +14,3 @@ App({
     this.globalData = {};
   },
 });
-upup
