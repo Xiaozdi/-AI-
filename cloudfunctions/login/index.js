@@ -1,4 +1,4 @@
-const cloud = require('wx-server-sdk');
+const cloud = require('wx-server-sdk'); upup
 
 cloud.init({
   env: 'llm-deploy-6g57q5hueb6d38ff'  // 使用相同的云环境ID
